@@ -8,6 +8,24 @@
       "group": "1",
       "job": "web developer",
       "id": 2
+    },
+    {
+      "fullname": "Milad Mohamadi",
+      "photo": "https://img.freepik.com/free-psd/man-with-thumbs-up_1154-467.jpg?size=626&ext=jpg&ga=GA1.1.1279096865.1663833542&semt=sph",
+      "email": "milaD@gmail.com",
+      "mobile": "09113242091",
+      "group": "1",
+      "job": "web developer",
+      "id": 3
+    },
+    {
+      "fullname": "قدیر نظری",
+      "mobile": "09111003023",
+      "email": "ghadir@gmail.com",
+      "job": "researcher",
+      "photo": "https://img.freepik.com/free-psd/man-with-thumbs-up_1154-467.jpg?size=626&ext=jpg&ga=GA1.1.1279096865.1663833542&semt=sph",
+      "group": "1",
+      "id": 4
     }
   ],
   "groups": [
