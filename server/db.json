@@ -10,7 +10,9 @@
       "id": 2
     },
     {
-      "fullname": "Milad Mohamadi",
+      "fullname": [
+        "saman"
+      ],
       "photo": "https://img.freepik.com/free-psd/man-with-thumbs-up_1154-467.jpg?size=626&ext=jpg&ga=GA1.1.1279096865.1663833542&semt=sph",
       "email": "milaD@gmail.com",
       "mobile": "09113242091",

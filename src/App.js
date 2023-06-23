@@ -15,7 +15,6 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     const fetchData = async () => {
       try {
         setLoading(true);
@@ -33,8 +32,8 @@ const App = () => {
     }
 
     fetchData();
+  }, []);
 
-  }, [])
 
   return (
     <div className="App">
