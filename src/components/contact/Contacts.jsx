@@ -4,7 +4,9 @@ import NotFound from '../../assets/not-found.gif';
 import Spinner from "../Spinner";
 import { Link } from "react-router-dom";
 
-const Contacts = ({contacts, loading}) => {
+const Contacts = ({contacts, loading, confirmDelete, search}) => {
+  
+ 
   return (
     <>
       <section className="container">
@@ -25,10 +27,17 @@ const Contacts = ({contacts, loading}) => {
         <section className="container">
         <div className="row">
             {/*contact*/}
-            {contacts.length > 0 ? contacts.map((contact, index) => {
+            {contacts.length > 0 ? contacts.filter((contact, i) => {
+              let filter = search.get('query');
+              
+              if(!filter) return true;
+              return contact.fullname.includes(filter);
+            })
+            
+            .map((contact, index) => {
               return (
 
-                <Contact contact = {contact} key={index}/>
+                <Contact contact = {contact} confirmDelete= {() => confirmDelete(contact.id, contact.fullname)} key={index}/>
               );
             }) : (
               <div className="text-center flex-column py-5 d-flex align-items-center justify-content-center" style={{backgroundColor: CURRENTLINE}}>

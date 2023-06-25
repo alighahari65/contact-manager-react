@@ -1,6 +1,7 @@
 import { PURPLE } from "../../helpers/colors";
 
-const Search = () => {
+const Search = ({setSearch}) => {
+
   return (
     <div className="input-group mx-2 w-75" dir="ltr">
       <span
@@ -17,6 +18,11 @@ const Search = () => {
         placeholder="جستجوی مخاطب"
         aria-label="Search"
         aria-describedby="basic-addon1"
+        onChange={(e) => {
+          let query = e.target.value;
+              if (!query) setSearch({});
+              setSearch({ query });
+        }}
       />
     </div>
   );
